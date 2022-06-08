@@ -1,0 +1,9 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#botones-nav {
+  display: flex;
+  justify-content: center;
+}
