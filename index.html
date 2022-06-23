@@ -7,6 +7,9 @@
   <title>Tinder</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="https://kit.fontawesome.com/33c3fc8b29.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -59,14 +62,59 @@
       Controles de abajo
     </div> -->
     <div id="detalle-perfil" style="background-color: red">
-      <div style="backgroud-color: rgba(0,0,0,0.20); color: white; border-radius: 20px">
-        Bulma
+      <div class="informacion-perfil">
+        <div>
+          <span class="nombre">Bulma</span>
+          <span class="edad">34</span>
+          <span class="icono-check"><i class="fa-solid fa-circle-check"></i></span>
+        </div>
+        <div>
+          <span><i class="fa-solid fa-briefcase"></i></span>
+          <span>Guerrero z</span>
+        </div>
+        <div>
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <span>Tegucigalpa</span>
+        </div>
+        <div class="contenedor-gustos">
+          <div class="item-gusto">Pelear</div>
+          <div class="item-gusto">Comer</div>
+          <div class="item-gusto">Genkidamas</div>
+        </div>
       </div>
     </div>
-    <footer class="" style="background-color: yellow">3</footer>
+    <footer class="">
+      <div><i class="fa-solid fa-circle-chevron-left"></i></div>
+      <div class="boton-corazon"><i class="fa-solid fa-heart"></i></div>
+      <div><i class="fa-solid fa-circle-chevron-right"></i></div>
+    </footer>
   </section>
   <section id="contenido-3">
-    Matches
+    <div class="contenedor-matches">
+      <h3>Matches</h3>
+      <div class="lista-matches">
+
+        <div class="tarjeta-usuario"><!-- Card -->
+          <div class="imagen">
+            <img src="assets/img/profile-pics/bulma.jpg">
+          </div>
+          <div class="detalle">
+            Toda la otra información
+          </div>
+        </div><!-- Fin Card -->
+
+        <div class="tarjeta-usuario"><!-- Card -->
+          <div class="imagen">
+            <img src="assets/img/profile-pics/gohan.jpg">
+          </div>
+          <div class="detalle">
+            Toda la otra información
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </section>
 
   <script src="assets/js/controlador.js"></script>
