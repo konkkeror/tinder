@@ -1,3 +1,7 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -98,4 +102,117 @@ nav {
 
 .opcion.estrella-activa {
   color: #ffc400;
+}
+
+#contenido-3, #contenido-2 {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  color: #dddee2;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#detalle-perfil {
+  height: 80vh;
+  background-image: url(../img/cover-pics/bulma.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: rgba(0,0,0, 0.12) 1px 1px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+#detalle-perfil .nombre {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+#detalle-perfil .icono-check {
+  color: #2e8cf7;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border-radius: 35px;
+  height: 33px;
+  width: 30px;
+  padding: 2px 5px;
+  margin-right: 10px;
+}
+
+#detalle-perfil .edad {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.item-gusto {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 5px 15px
+}
+
+.contenedor-gustos {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.informacion-perfil {
+  background-color: rgba(0,0,0,0.50);
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.boton-corazon {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 47px;
+  box-shadow: #00000057 1px 1px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#3ee9bd;
+}
+
+.contenedor-matches {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.tarjeta-usuario {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tarjeta-usuario .imagen {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.tarjeta-usuario .detalle {
+  flex: 2;
+}
+
+.tarjeta-usuario .imagen img {
+  width: 100%;
+  border-radius: 10px;
 }
