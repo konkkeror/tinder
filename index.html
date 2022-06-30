@@ -34,23 +34,6 @@
     <section class="usuarios-section">
       <h3 class="color-primario texto-centrado">Usuario Seleccionado</h3>
       <div id="lista-usuarios" class="color-primario">
-        <div class="usuario">
-          <img src="assets/img/profile-pics/bulma.jpg">
-          <div class="etiqueta">Bulma</div>
-        </div>
-        <div class="usuario">
-          <img src="assets/img/profile-pics/androide_18.jpg">
-          <div class="etiqueta">A 18</div>
-        </div>
-        <div class="usuario">
-          <img src="assets/img/profile-pics/azula.jpeg">
-          <div class="etiqueta">Azula</div>
-        </div>
-        <div class="usuario">
-          <img src="assets/img/profile-pics/hinata.jpg">
-          <div class="etiqueta">Hinata</div>
-        </div>
-        
       </div>
     </section>
   </section>
@@ -61,32 +44,13 @@
     <div style="background-color: red">
       Controles de abajo
     </div> -->
-    <div id="detalle-perfil" style="background-color: red">
-      <div class="informacion-perfil">
-        <div>
-          <span class="nombre">Bulma</span>
-          <span class="edad">34</span>
-          <span class="icono-check"><i class="fa-solid fa-circle-check"></i></span>
-        </div>
-        <div>
-          <span><i class="fa-solid fa-briefcase"></i></span>
-          <span>Guerrero z</span>
-        </div>
-        <div>
-          <span><i class="fa-solid fa-location-dot"></i></span>
-          <span>Tegucigalpa</span>
-        </div>
-        <div class="contenedor-gustos">
-          <div class="item-gusto">Pelear</div>
-          <div class="item-gusto">Comer</div>
-          <div class="item-gusto">Genkidamas</div>
-        </div>
-      </div>
+    <div id="detalle-perfil">
+      
     </div>
     <footer class="">
-      <div><i class="fa-solid fa-circle-chevron-left"></i></div>
+      <div onclick="perfilAnterior()"><i class="fa-solid fa-circle-chevron-left"></i></div>
       <div class="boton-corazon"><i class="fa-solid fa-heart"></i></div>
-      <div><i class="fa-solid fa-circle-chevron-right"></i></div>
+      <div onclick="perfilSiguiente()"><i class="fa-solid fa-circle-chevron-right"></i></div>
     </footer>
   </section>
   <section id="contenido-3">
@@ -116,7 +80,7 @@
       </div>
     </div>
   </section>
-
+  <script src="assets/js/data.js"></script>
   <script src="assets/js/controlador.js"></script>
 </body>
 </html>
