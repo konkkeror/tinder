@@ -4,9 +4,83 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tinder</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/33c3fc8b29.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <nav>
+    <div id="opcion-usuario" class="btn-usuario active" style="width: 60px;" onclick="seleccionarOpcion(1)">
+      <i class="fa-xl fa-solid fa-user"></i>
+    </div>
+    <div id="botones-nav" style="flex: 1; ">
+      <div class="selector-botones">
+        <div id="opcion-activa">
+        </div>
+        <div id="opcion-perfiles" class="opcion" onclick="seleccionarOpcion(2)"><i class="fa-xl fa-solid fa-fire-flame-curved"></i></div>
+        <div id="opcion-matches" class="opcion" onclick="seleccionarOpcion(3)"><i class="fa-xl fa-solid fa-star"></i></div>
+      </div>
+    </div>
+    <div style="width: 60px;">
+    </div>
+  </nav>
+  <section id="contenido-1">
+    <section class="logo-section">
+      <img src="assets/img/tinder-logo.png">
+    </section>
+    <section class="usuarios-section">
+      <h3 class="color-primario texto-centrado">Usuario Seleccionado</h3>
+      <div id="lista-usuarios" class="color-primario">
+      </div>
+    </section>
+  </section>
+  <section id="contenido-2">
+    <!-- <div style="background-color: blue">
+      Imagen de goku
+    </div>
+    <div style="background-color: red">
+      Controles de abajo
+    </div> -->
+    <div id="detalle-perfil">
+      
+    </div>
+    <footer class="">
+      <div onclick="perfilAnterior()"><i class="fa-solid fa-circle-chevron-left"></i></div>
+      <div class="boton-corazon"><i class="fa-solid fa-heart"></i></div>
+      <div onclick="perfilSiguiente()"><i class="fa-solid fa-circle-chevron-right"></i></div>
+    </footer>
+  </section>
+  <section id="contenido-3">
+    <div class="contenedor-matches">
+      <h3>Matches</h3>
+      <div class="lista-matches">
+
+        <div class="tarjeta-usuario"><!-- Card -->
+          <div class="imagen">
+            <img src="assets/img/profile-pics/bulma.jpg">
+          </div>
+          <div class="detalle">
+            Toda la otra información
+          </div>
+        </div><!-- Fin Card -->
+
+        <div class="tarjeta-usuario"><!-- Card -->
+          <div class="imagen">
+            <img src="assets/img/profile-pics/gohan.jpg">
+          </div>
+          <div class="detalle">
+            Toda la otra información
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/controlador.js"></script>
 </body>
 </html>
